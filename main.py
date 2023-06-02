@@ -4,7 +4,7 @@ from flask_socketio import SocketIO, emit
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'secret!'
-socketio = SocketIO(app, async_mode='gevent_uwsgi')
+socketio = SocketIO(app)
 
 
 @app.route('/')
