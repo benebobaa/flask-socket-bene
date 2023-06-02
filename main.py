@@ -28,5 +28,5 @@ def handle_client_event(data):
 
 
 if __name__ == '__main__':
-    socketio.run(app, debug=True, port=os.getenv("PORT", default=8000))
+    socketio.run(app, debug=True)
     # app.run(debug=True, port=os.getenv("PORT", default=5000))
